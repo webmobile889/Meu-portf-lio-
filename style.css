@@ -1,0 +1,533 @@
+
+body {
+    font-size: 15pt;
+    background: #42445A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.open, .close{
+  display: none;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ padding: 20px;
+}
+
+.logo h1 {
+    color: black;
+    font-size: 22px;
+}
+
+.logo span {
+    color: #FF8904;
+}
+
+.content nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.content nav ul li {
+    list-style-type: none;
+    padding: 0 15px;
+}
+
+.content nav ul li a {
+    text-decoration: none;
+    color: #FF8904;
+    font-weight: bold;
+}
+
+.content button {
+    width: 100px;
+    height: 40px;
+    background: #FF8904;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.content button:hover {
+    background: #ff7b00;
+}
+
+/* Primeira Secção */
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.text {
+    margin-right: 20px;
+    max-width: 600px;
+}
+
+.text h1 {
+    color: green;
+    font-size: 2.5rem;
+}
+
+.text h2 {
+    color: black;
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+
+.text p {
+    font-size: 16px;
+    color: white;
+    margin: 20px 0;
+}
+
+.rede-social {
+    display: flex;
+    gap: 10px;
+}
+.rede-social i{ 
+  color:#FF8904 ;
+  font-size: 20px;
+  
+}
+.rede-social button {
+    width: 60px;
+    height: 60px;
+    background: white;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.rede-social button:hover {
+    transform: scale(1.1);
+}
+
+.imagem img {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagem img:hover {
+    transform: scale(1.05);
+}
+
+
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project {
+    max-width: 300px;
+    text-align: center;
+}
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testemunhos {
+    padding: 50px 20px;
+    background: #fff;
+}
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.testimonial {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+  }
+  
+  
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FF8904;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none; /* Mostre apenas quando o usuário rolar para baixo */
+}
+#backToTop:hover {
+    background: #ff7b00;
+}
+/* Botão de Contato Fixo */
+.contact-button {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da tela */
+    left: 20px; /* Distância da lateral esquerda da tela */
+    background-color: #25D366; /* Cor do WhatsApp */
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px; /* Tamanho do ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+.contact-button:hover {
+    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.contact-button i {
+    font-size: 28px; /* Ajuste o tamanho do ícone */
+}
+/* Fim Botão de Contato Fixo */
+
+
+/* Estilo Geral da Seção do Blog */
+.blog {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  color: #333;
+}
+
+.post .summary {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  width: 100px;
+  height: 10%;
+  background-color: #FF8904;
+  color: white;
+  padding: 10px 20;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #e07c00;
+}
+.full-content h1{
+  margin:20px 0;
+  color: #FF8904;
+}
+.full-content {
+  display: none;
+  margin-top: 20px;
+}
+/*Fim Estilo Geral da Seção do Blog */
+/* contacto */
+#contact {
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+#contact h2{
+  text-align: center;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+  width: 100px;
+    background: #FF8904;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+/* contacto Fim*/
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+
+    .open {
+        display: flex;
+        font-size: 30px;
+        margin-left: 150px;
+    }
+
+.content button {
+  display: none;
+}
+    #closeBtn {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 20px;
+        color: white;
+    }
+/* Configuração do menu lateral */
+ #interface {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%); /* Inicialmente fora da tela */
+  height: 100%;
+  width: 200px;
+  background-color: #0e0f31;
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out; /* Transição suave para abertura/fechamento */
+  z-index: 999;
+}
+    .content nav ul li{
+      padding: 20px;
+      border-bottom: 4px solid white;
+    }
+
+    .content nav ul {
+        display: block;
+       margin: 30px;
+       
+    }
+    .conteiner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+  
+    .imagem img {
+        max-width: 200px;
+    }
+
+    .rede-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.8rem;
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+    }
+
+    .imagem img {
+        max-width: 150px;
+    }
+
+    .rede-social button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Blog Respondivo */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-container article {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #blog h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-container article h3 {
+        font-size: 1.2rem;
+    }
+
+    .blog-container article p {
+        font-size: 0.9rem;
+    }
+}
+/* f
+Fim Blog Respondivo */
+
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #FF8904;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-links h3, .footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #FF8904;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ff7b00;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a {
+    font-size: 1.5rem;
+    color: #FF8904;
+    transition: transform 0.3s, color 0.3s;
+}
+
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-links ul li a {
+        font-size: 0.9rem;
+    }
+
+
+
+    .footer-bottom {
+        font-size: 0.75rem;
+    }
+}

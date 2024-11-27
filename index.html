@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link para Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<title>HTML</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <div class="logo">
+        <h1>F <span>DESIGNER</span></h1>
+      </div>
+      <div class="open">
+        <span id="openBtn">&#9776;</span>
+      </div>
+
+
+      <div class="interface" id="interface">
+        <span class="close" id="closeBtn">&times;</span>
+
+        <nav>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <a href="#contact"><button>Contacto</button></a>
+    </div>
+    
+
+  </header>
+
+
+  <section>
+    <div class="conteiner">
+      <div class="text">
+        <h1>Eu sou Filipe Silva</h1>
+        <h2>Desenvolvedor de Websites</h2>
+        <p>Especializado em desenvolvimento de sites para web e mobile, comprometido em criar soluções digitais de alta qualidade.</p>
+
+
+        <div class="rede-social">
+          <a href="#"><button> <i class="fab fa-instagram"></i></button></a>
+          <a href="#"> <button> <i class="fab fa-linkedin"></i></button></a>
+          <a href="#">
+            <button> <i class="fab fa-tiktok"></i></button></a>
+          <a href="#"><button>
+              <i class="fab fa-pinterest"></i>
+            </button></a>
+        </div>
+
+      </div>
+      <div class="imagem">
+        <img src="Pic.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h2>Meus Projetos</h2>
+    <div class="portfolio-container">
+      <div class="project">
+        <img src="projetos/projeto1.png" alt="Projeto 2">
+        <h3>Projeto 1</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="project">
+        <img src="projetos/projeto2.png" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <!-- Adicione mais projetos -->
+    </div>
+  </section>
+
+
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+  <section class="blog">
+    <a href="https://wa.me/123456789" class="contact-button" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="blog-container">
+     
+      <article class="post">
+        <h2>Por Que Ter um Site é Essencial?</h2>
+        <p class="summary">Ter um site para o seu negócio ou projeto pessoal é fundamental para se destacar no mundo digital...</p>
+        <button class="read-more" onclick="toggleContent(this)">Ler mais</button>
+        <div class="full-content">
+          <p>Com um site, você pode aumentar sua visibilidade online, alcançar um público global, fornecer informações detalhadas sobre seus produtos ou serviços e construir credibilidade.</p>
+          <p>Além disso, um site bem estruturado permite que os clientes interajam diretamente com sua empresa através de formulários de contato, e-commerce, entre outros.</p>
+          <p>Em um mundo onde a maioria das pessoas busca serviços e produtos online, não ter um site pode resultar em perder grandes oportunidades de negócios.</p>
+        </div>
+
+      </article>
+       <article class="post">
+        <h2> Vantagens de Ter um Site</h2>
+        <p class="summary">Ter um site para sua empresa ou projeto pessoal é fundamental no mundo digital. Descubra as 5 principais vantagens...</p>
+        <button class="read-more" onclick="toggleContent(this)">Ler mais</button>
+        <div class="full-content">
+          <h1>Visibilidade Global:</h1>
+          <p>Um site permite que sua empresa ou projeto seja encontrado por qualquer pessoa no mundo, aumentando sua audiência e potencial de vendas.</p>
+          <h1>Credibilidade e Confiança:</h1>
+          <p>Ter um site bem projetado transmite seriedade e profissionalismo, criando confiança nos seus clientes e parceiros.</p>
+          <h1>Acessibilidade 24/7</h1>
+          <p> Ao ter um site, seus produtos e serviços estão disponíveis para os clientes o tempo todo, sem restrições de horário.</p>
+          <h1>Marketing Digital</h1>
+          <p> Um site é a base para estratégias de marketing digital, como SEO, anúncios pagos, e-mail marketing, etc., para atrair mais visitantes e conversões.</p>
+          <h1>Interação com Clientes:</h1>
+          <p>Com formulários de contato, chats ao vivo e outros recursos, você pode se comunicar diretamente com seus clientes, entendendo suas necessidades e criando um relacionamento contínuo.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  
+    <section id="testemunhos">
+    <h2>O que dizem sobre mim</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <img src="cliente 1.jpg" alt="Foto do Cliente 1">
+        <h4>Eduardo Martins</h4>
+        <p>"O Filipe fez um excelente trabalho no meu site. Recomendo muito!"</p>
+      </div>
+      <div class="testimonial">
+        <img src="cliente2.jpg" alt="Foto do Cliente 2">
+        <h4>Cliente 2</h4>
+        <p>"Profissional de alta qualidade e muito atencioso!"</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Entre em Contato</h2>
+    <form action="https://formspree.io/f/meulink" method="POST">
+      <input type="text" name="name" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu E-mail" required>
+      <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>F <span>DESIGNER</span></h2>
+        <p>Especializada em criação de sites e soluções digitais de alta qualidade.</p>
+        
+      </div>
+
+      <div class="footer-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#">Termos e Condições</a></li>
+          <li><a href="#">Políticas de Privacidade</a></li>
+
+          <li><a href="#">Formas de pagamentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+      
+      
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 F Designer. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
